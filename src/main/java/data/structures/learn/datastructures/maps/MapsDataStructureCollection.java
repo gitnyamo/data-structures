@@ -17,13 +17,8 @@ public class MapsDataStructureCollection {
     }
 
     public static void diamondMaps() {
-        Map<Person,  Diamond> diamondMap = new HashMap<>();
-        diamondMap.put(new Person("Arica", 37), new Diamond("Treated Diamonds", "South Africa"));
-        diamondMap.put(new Person("Anita", 21), new Diamond("Emerald Diamond", " Ghana"));
-        diamondMap.put(new Person("Olekuye", 29), new Diamond("Oval Diamond", "Algeria"));
-        diamondMap.put(new Person("Kisha", 35), new Diamond("Heart Diamond", "South Arabia" ));
-        diamondMap.put(new Person("Mark", 38), new Diamond("VS1", "USA"));
-        System.out.println();
+        Map<Person, Diamond> diamondMap = getPersonDiamondMap();
+
         System.out.println();
         System.out.println("****************************");
         System.out.println("Diamonds");
@@ -31,7 +26,20 @@ public class MapsDataStructureCollection {
 
         diamondMap.entrySet().forEach(System.out::println);
 
+        System.out.println(diamondMap.get(new Person("Mark", 38)));// if you do not use override hashcode, this will print null even though the name of that key exists...
+        // Take note that override toString() in pojo and hashcode in pojo classes is really important especially when working with collections coding... reduces amount of time used o code
 
+
+    }
+
+    private static Map<Person, Diamond> getPersonDiamondMap() {
+        Map<Person,  Diamond> diamondMap = new HashMap<>();
+        diamondMap.put(new Person("Arica", 37), new Diamond("Treated Diamonds", "South Africa"));
+        diamondMap.put(new Person("Anita", 21), new Diamond("Emerald Diamond", " Ghana"));
+        diamondMap.put(new Person("Olekuye", 29), new Diamond("Oval Diamond", "Algeria"));
+        diamondMap.put(new Person("Kisha", 35), new Diamond("Heart Diamond", "South Arabia" ));
+        diamondMap.put(new Person("Mark", 38), new Diamond("VS1", "USA"));
+        return diamondMap;
     }
 
     public static void maps() {
