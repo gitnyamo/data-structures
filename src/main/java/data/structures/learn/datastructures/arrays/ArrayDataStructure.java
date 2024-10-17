@@ -44,5 +44,10 @@ public class ArrayDataStructure {
         for (int i = colors.length -1; i >= 0; i--) {
             System.out.println(colors[i]);
         }
+
+        // check the length of your array
+        System.out.println();
+        System.out.println("What is the length of the colors array?");
+        System.out.println(colors.length);// accessing the length of colors array
     }
 }
