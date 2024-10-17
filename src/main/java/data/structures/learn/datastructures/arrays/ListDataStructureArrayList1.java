@@ -70,7 +70,6 @@ public class ListDataStructureArrayList1 {
      * - fast random data access/retrievals
      * - Has various implementations i.e.
      *          - ArrayList
-     *          - LinkedList
      *          - Stack
      *          - Vector
      *          - etc
