@@ -14,12 +14,12 @@ public class ArraysDataStructures2D {
             }
         }
         System.out.println(Arrays.deepToString(board)); //outputs: [[-, -, -], [-, -, -], [-, -, -]]
-        // The code right below is just the same as the one above, just constructed in a a little bit different way
         char[][] boardTwo = new char[][] {
                 new char[] {'0','-','-'},
                 new char[] {'0','-','-'},
                 new char[] {'0','-','-'}
         };
+        // This code is  from line 23 the same as the code above from line 17
         board[0][0] = '0';
         board[1][0] = '0';
         board[2][0] = '0';
