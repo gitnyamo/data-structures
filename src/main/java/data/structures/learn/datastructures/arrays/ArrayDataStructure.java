@@ -11,7 +11,7 @@ public class ArrayDataStructure {
 
         System.out.println(Arrays.toString(colors));//outputs: [purple, blue, null, null, null]
 
-        System.out.println(colors[0]);// outputs: purple....This is accessing index... In this case accessing the 1st element of the array
+        System.out.println(colors[0]);
 
         colors[2] = "green";
 
@@ -56,10 +56,10 @@ public class ArrayDataStructure {
         System.out.println("Loop through using enhanced for loop instead of regular traditional for loop");
         System.out.println();
 
-        for (String color : colors){// with enhanced for loop you use data type instead of counter.... see this example
+        for (String color : colors){
             System.out.println(color);
         }
-        // another way is to use Streams method reference.. i'e.. see example right below
+        // loop through using stream method reference
         System.out.println();
         System.out.println("Using stream method reference to loop through elements");
         System.out.println();
