@@ -49,5 +49,19 @@ public class ArrayDataStructure {
         System.out.println();
         System.out.println("What is the length of the colors array?");
         System.out.println(colors.length);// accessing the length of colors array
+
+
+        //loop through using enhanced for loop
+        System.out.println();
+        System.out.println("Loop through using enhanced for loop instead of regular traditional for loop");
+        System.out.println();
+
+        for (String color : colors){// with enhanced for loop you use data type instead of counter.... see this example
+            System.out.println(color);
+        }
     }
+
+
+
+
 }
