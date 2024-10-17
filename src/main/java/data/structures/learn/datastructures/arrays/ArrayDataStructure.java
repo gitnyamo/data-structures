@@ -23,5 +23,16 @@ public class ArrayDataStructure {
         System.out.println(Arrays.toString(numbers));
 
         System.out.println(numbers[1]);
+
+
+        //loop through using for loop
+        System.out.println();
+        System.out.println();
+        System.out.println("Loop through using for loop");
+        System.out.println();
+
+        for (int i = 0; i < colors.length; i++) {
+            System.out.println(colors[i]);
+        }
     }
 }
