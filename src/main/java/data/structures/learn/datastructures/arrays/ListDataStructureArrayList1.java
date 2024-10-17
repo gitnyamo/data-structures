@@ -6,11 +6,9 @@ import java.util.List;
 public class ListDataStructureArrayList1 {
     public static void main(String[] args) {
 
-        List colors = new ArrayList();// This works for everything thing.
+        List<String> colors = new ArrayList<>();// To work with a certain type make sure you pass it.
         colors.add("Purple");
         colors.add("blue");
-        colors.add(1);
-        colors.add(new Object());
 
 
         System.out.println(colors);
