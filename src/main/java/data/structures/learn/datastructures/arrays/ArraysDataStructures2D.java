@@ -13,10 +13,20 @@ public class ArraysDataStructures2D {
 
             }
         }
-        // Print Array
-
+        System.out.println(Arrays.deepToString(board)); //outputs: [[-, -, -], [-, -, -], [-, -, -]]
+        // The code right below is just the same as the one above, just constructed in a a little bit different way
+        char[][] boardTwo = new char[][] {
+                new char[] {'0','-','-'},
+                new char[] {'0','-','-'},
+                new char[] {'0','-','-'}
+        };
+        board[0][0] = '0';
+        board[1][0] = '0';
+        board[2][0] = '0';
         System.out.println(Arrays.deepToString(board));// use deepToString() for a 2D array to output correctly instead of toString()
-        //outputs: [[-, -, -], [-, -, -], [-, -, -]]
+        //outputs: [[0, -, -], [0, -, -], [0, -, -]]
+        System.out.println(Arrays.deepToString(boardTwo));//outputs: [[0, -, -], [0, -, -], [0, -, -]]
+
 
 
     }
