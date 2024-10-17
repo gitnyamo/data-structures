@@ -59,6 +59,14 @@ public class ArrayDataStructure {
         for (String color : colors){// with enhanced for loop you use data type instead of counter.... see this example
             System.out.println(color);
         }
+        // another way is to use Streams method reference.. i'e.. see example right below
+        System.out.println();
+        System.out.println("Using stream method reference to loop through elements");
+        System.out.println();
+
+        Arrays.stream(colors).forEach(System.out::println);
+
+
     }
 
 
