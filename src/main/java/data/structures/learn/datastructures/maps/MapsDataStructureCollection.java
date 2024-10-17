@@ -11,6 +11,31 @@ import java.util.Map;
 public class MapsDataStructureCollection {
 
     public static void main(String[] args) {
+        maps();
+        diamondMaps();
+
+    }
+
+    public static void diamondMaps() {
+        Map<Person,  Diamond> diamondMap = new HashMap<>();
+        diamondMap.put(new Person("Arica", 37), new Diamond("Treated Diamonds", "South Africa"));
+        diamondMap.put(new Person("Anita", 21), new Diamond("Emerald Diamond", " Ghana"));
+        diamondMap.put(new Person("Olekuye", 29), new Diamond("Oval Diamond", "Algeria"));
+        diamondMap.put(new Person("Kisha", 35), new Diamond("Heart Diamond", "South Arabia" ));
+        diamondMap.put(new Person("Mark", 38), new Diamond("VS1", "USA"));
+        System.out.println();
+        System.out.println();
+        System.out.println("****************************");
+        System.out.println("Diamonds");
+        System.out.println("*****************************");
+
+        diamondMap.entrySet().forEach(System.out::println);
+
+
+    }
+
+    public static void maps() {
+
         Map<Integer, Person> map = new HashMap<>();
         map.put(1, new Person("Alex", 21));
         map.put(2, new Person("Maria", 32));
@@ -34,7 +59,7 @@ public class MapsDataStructureCollection {
         // or you could use a lambda to output ....
         System.out.println();
         map.entrySet()
-                .forEach(x -> System.out.println(x.getKey()+ " " + x.getValue()));
+                .forEach(x -> System.out.println(x.getKey() + " " + x.getValue()));
 
         // You could also do....
         System.out.println();
@@ -50,7 +75,20 @@ public class MapsDataStructureCollection {
         System.out.println(map.keySet());// with sets there shouldn't be any duplicates in it.
 
 
-    }
-    // This is how to work with maps in Java ----in brief.
+        // This is how to work with maps in Java ----in brief.
 
+    /*Something you should know when working with map
+
+
+    *
+
+    hashcode means mapping an object to its integer value.....
+
+    *With maps lookups are really very fast because of the hashcode.
+    Internally it uses hash function -> hashcode which generates the key numbers mapping.. no matter how many
+     times you call it once generated it will produce the same key assigned internally by hashcode for a given function call or map.
+
+    * */
+
+    }
 }
