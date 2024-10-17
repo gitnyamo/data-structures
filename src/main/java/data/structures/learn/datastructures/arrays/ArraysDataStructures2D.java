@@ -35,3 +35,16 @@ public class ArraysDataStructures2D {
 
 
 // D2 Array use case... Anytime you want to have a grid, use a 2D array
+
+/**  Arrays Data Structure
+ *
+ *  - Fixed in size
+ *  - Fast for data retrieval
+ *  - Compact memory usage size is known
+ *  - Delete operation very hard
+ *  - 2D Arrays
+ *
+ *
+ * Note: Arrays are building blocks of many other data structures that java offers
+ *
+ */

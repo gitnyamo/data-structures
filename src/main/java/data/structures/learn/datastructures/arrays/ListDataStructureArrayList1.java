@@ -59,6 +59,22 @@ public class ListDataStructureArrayList1 {
         System.out.println(colorUnModified.size());
     }
 
+    // This is pretty much everythihg about arraylis
+
+    /**
+     * List Interface:
+     *
+     * - An ordered collection aka sequence
+     * - Allow duplicates
+     * - Not fixed in size like arrays
+     * - fast random data access/retrievals
+     * - Has various implementations i.e.
+     *          - ArrayList
+     *          - LinkedList
+     *          - etc
+     *
+     * */
+
 
 
 }
