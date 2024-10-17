@@ -12,4 +12,7 @@ public class DataStructuresApplication {
         SpringApplication.run(DataStructuresApplication.class, args);
     }
 
+    // Note: You can have duplicates with a list but not a set
+    // Sets contains no pair of elements.
+
 }
