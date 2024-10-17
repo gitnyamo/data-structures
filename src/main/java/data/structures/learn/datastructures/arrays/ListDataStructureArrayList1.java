@@ -53,9 +53,11 @@ public class ListDataStructureArrayList1 {
                "yellow"
        );
 
+        colorUnModified.add("pink");// Note: adding this or any addition will throw an error and wont work error type: .UnsupportedOperationException
 
         System.out.println("");
         System.out.println(colorUnModified);
+        System.out.println(colorUnModified.size());
     }
 
 
