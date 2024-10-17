@@ -2,6 +2,7 @@ package data.structures.learn.datastructures.arrays;
 
 import java.util.ArrayList;
 import java.util.List;
+// Note: ArrayList is backed by Array... They internally use Array
 
 public class ListDataStructureArrayList1 {
     public static void main(String[] args) {
