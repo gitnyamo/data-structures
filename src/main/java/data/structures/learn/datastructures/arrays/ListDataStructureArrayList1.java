@@ -44,10 +44,20 @@ public class ListDataStructureArrayList1 {
         for (int i = 0; i < colors.size(); i++){
             System.out.println(colors.get(i));// use dot get index then pass i inside to get the list.
         }
+        // Note: All the 3 above ways gives the same results.... just choose one that is  more efficient for future scalability
+        // and considering your use case too.
 
+        //Note: If you want to do an immutable list... do it as below
+       List<String> colorUnModified = List.of(
+               "blue",
+               "yellow"
+       );
+
+
+        System.out.println("");
+        System.out.println(colorUnModified);
     }
 
-    // Note: All the 3 above ways gives the same results.... just choose one that is  more efficient for future scalability
-    // and considering your use case too.
+
 
 }
