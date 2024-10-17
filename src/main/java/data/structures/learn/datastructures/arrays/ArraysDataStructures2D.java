@@ -31,3 +31,7 @@ public class ArraysDataStructures2D {
 
     }
 }
+
+
+
+// D2 Array use case... Anytime you want to have a grid, use a 2D array
