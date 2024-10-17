@@ -34,5 +34,15 @@ public class ArrayDataStructure {
         for (int i = 0; i < colors.length; i++) {
             System.out.println(colors[i]);
         }
+
+        // loop through in reverse using for loop
+
+        System.out.println();
+        System.out.println("Loop through in reverse using for loop");
+        System.out.println();
+
+        for (int i = colors.length -1; i >= 0; i--) {
+            System.out.println(colors[i]);
+        }
     }
 }
