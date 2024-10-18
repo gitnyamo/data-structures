@@ -75,6 +75,7 @@ public class MapsDataStructureCollection {
             System.out.println(key + " - " + person);
         }));
 
+
         System.out.println(map.get(3));// it will be null if it is not present
 
         System.out.println(map.getOrDefault(3, new Person("default", 0)));// if key 3 is default and not available it auto default to "default" "0"
